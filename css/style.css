@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .h2 {
+    font-size: 24px;
+  }
+  .text-center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #pied {
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    border-top: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+  }
+
+  #site-header {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative; /* 设置为相对定位 */
+  }
+
+  #site-main {
+    @apply m-auto mt-20 p-5 relative;
+  }
+  div#cadre-conversations {
+    display: flex;
+  }
+  ul.flex-col {
+    @apply text-center;
+  }
+  #branding {
+    text-decoration: underline;
+  }
+  main h2 {
+    @apply h2;
+  }
+  .flex-col li {
+    list-style-type: none;
+  }
+
+  #left-pane {
+    @apply w-1/4 border-r-2 p-2 hidden md:block;
+    /* box-sizing: border-box; */
+  }
+
+  #right-pane {
+    @apply w-full md:w-3/4 p-2 max-h-screen flex flex-col;
+    /* box-sizing: border-box; */
+  }
+  #messages-container {
+    /* border: 1px solid #ddd; */
+    @apply p-2 overflow-y-auto mb-2 h-5/6;
+    /* height: 200px; */
+  }
+  .message {
+    @apply p-1;
+    /* border-bottom: 1px solid #eee; */
+  }
+  #chat-container {
+    @apply flex flex-col p-1 border-s-white max-w-3xl mx-5 my-auto;
+    /* border: 1px solid #ddd; */
+    /* max-width: 600px; */
+    overflow-y: auto;
+  }
+  .chat-message {
+    @apply bg-white p-3 mb-3 border-r-4 shadow-sm;
+  }
+  .message-header {
+    @apply font-bold mb-1;
+  }
+  #message-theme{
+    @apply m-auto;
+  }
+  #right-pane-header{
+    @apply flex;
+  }
+  #messageInput{
+    @apply flex-1 px-3 py-2 border border-gray-300 rounded-lg;
+  }
+  #site-footer{
+    @apply h-20 md:h-10;
+  }
+  #site-footer nav{
+    @apply h-20;
+  }
+  #site-info{
+    @apply static;
+  }
+  #messageInput{
+    @apply w-3/4;
+  }
+  #toConversation{
+    @apply md:hidden;
+  }
+  .button {
+    @apply text-white font-bold py-2 px-4 rounded;
+  }
+  #conversation-list-container{
+    @apply max-w-3xl m-auto;
+  }
+  .message-body {
+    @apply whitespace-pre-wrap;
+  }
+}
+
+
+
+
